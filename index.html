@@ -39,170 +39,61 @@
     <title>Careem - Simplifying Lives</title>
   </head>
   <body class="font-sans bg-white text-gray-800">
-    <!-- ==================== HEADER ==================== -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-6">
-          <div class="w-36 h-7">
-            <a href="index.html">
-              <img
-                src="img/logo.svg"
-                alt="Careem Logo"
-                class="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
-              />
-            </a>
-          </div>
-
-          <ul class="hidden lg:flex items-center gap-10" id="desktopNav">
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300"
-              >
-                Services
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300"
-              >
-                About Us
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="partners.html"
-                class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300"
-              >
-                Partners
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"
-                ></span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300"
-              >
-                Help
-                <span
-                  class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"
-                ></span>
-              </a>
-            </li>
-          </ul>
-
-          <div class="flex items-center gap-5">
-            <button
-              class="hidden md:block px-7 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
-            >
-              Book Ride
-            </button>
-            <div
-              class="hidden lg:flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 cursor-pointer"
-            >
-              <i class="bx bx-globe text-careem-green text-xl"></i>
-              <a href="#" class="text-gray-800 font-medium">English</a>
-              <i class="bx bx-chevron-down text-careem-green text-xl"></i>
-            </div>
-            <i
-              class="bx bx-menu text-careem-green text-4xl lg:hidden cursor-pointer hover:scale-110 transition-transform duration-300"
-              id="menu-icon"
-            ></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div
-        class="lg:hidden fixed top-0 right-0 w-80 h-screen bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50"
-        id="sideNav"
-      >
-        <div class="flex flex-col p-10 pt-24">
-          <a
-            href="services.html"
-            class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200"
-            >Services</a
-          >
-          <a
-            href="about.html"
-            class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200"
-            >About Us</a
-          >
-          <a
-            href="partners.html"
-            class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200"
-            >Partners</a
-          >
-          <a
-            href="contact.html"
-            class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200"
-            >Help</a
-          >
-        </div>
-      </div>
-    </header>
+    <!-- Navbar Component Container -->
+    <div id="navbar-container"></div>
 
     <!-- ==================== HERO SECTION ==================== -->
     <section
-      class="relative w-[90%] max-w-7xl mx-auto my-16 rounded-3xl overflow-hidden shadow-2xl bg-cover bg-center bg-no-repeat"
+      class="relative w-full sm:w-[95%] md:w-[90%] max-w-7xl mx-auto my-8 sm:my-12 md:my-16 rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl bg-cover bg-center bg-no-repeat"
       style="background-image: url('img/food_copy_f3ddd18886.webp')"
     >
+      <div class="absolute inset-0 z-10"></div>
       <div
-        class="absolute inset-0 z-10"
-      ></div>
-      <div class="relative z-20 px-8 md:px-16 lg:px-20 py-28 md:py-32">
+        class="relative z-20 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 py-12 sm:py-16 md:py-20 lg:py-28"
+      >
         <div class="max-w-2xl">
           <h1
-            class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight animate-fade-in-up drop-shadow-lg"
+            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-4 sm:mb-5 md:mb-6 leading-tight animate-fade-in-up drop-shadow-lg"
           >
             Order your favourites on Careem
           </h1>
           <p
-            class="text-lg md:text-xl text-white/95 mb-10 leading-relaxed animate-fade-in-up animation-delay-200 drop-shadow-md"
+            class="text-sm sm:text-base md:text-lg lg:text-xl text-white/95 mb-6 sm:mb-8 md:mb-10 leading-relaxed animate-fade-in-up animation-delay-200 drop-shadow-md"
           >
             Explore thousands of restaurants and track your order in real time.
             From comfort food to gourmet dining, we've got you covered.
           </p>
           <div
-            class="flex flex-wrap gap-5 mb-10 animate-fade-in-up animation-delay-400"
+            class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 md:gap-5 mb-6 sm:mb-8 md:mb-10 animate-fade-in-up animation-delay-400"
           >
             <button
-              class="px-12 py-4 rounded-full font-bold text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              class="w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 rounded-full font-bold text-base sm:text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
             >
               Order Now
             </button>
             <button
-              class="px-12 py-4 rounded-full font-bold text-lg text-careem-green bg-white border-2 border-careem-green hover:bg-careem-green hover:text-white transition-all duration-300"
+              class="w-full sm:w-auto px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 rounded-full font-bold text-base sm:text-lg text-careem-green bg-white border-2 border-careem-green hover:bg-careem-green hover:text-white transition-all duration-300"
             >
               Learn More
             </button>
           </div>
           <div
-            class="flex flex-wrap gap-4 animate-fade-in-up animation-delay-600"
+            class="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-fade-in-up animation-delay-600"
           >
             <img
               src="img/app-store.webp"
               alt="Download on App Store"
-              class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+              class="w-full sm:w-auto sm:w-32 md:w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
             />
             <img
               src="img/google-play.webp"
               alt="Get it on Google Play"
-              class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+              class="w-full sm:w-auto sm:w-32 md:w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
             />
             <img
               src="img/apk-download.webp"
               alt="Download APK"
-              class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+              class="w-full sm:w-auto sm:w-32 md:w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
             />
           </div>
         </div>
@@ -210,18 +101,20 @@
     </section>
 
     <!-- ==================== SERVICES SECTION ==================== -->
-    <section class="w-[90%] max-w-7xl mx-auto my-24">
-      <div class="text-center mb-16">
+    <section
+      class="w-full sm:w-[95%] md:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 md:px-0 my-12 sm:my-16 md:my-20 lg:my-24"
+    >
+      <div class="text-center mb-8 sm:mb-12 md:mb-16">
         <h2
-          class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block"
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5 relative inline-block px-4"
         >
           We'll bring your meal, to you
           <span
-            class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
+            class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 w-16 sm:w-20 h-0.5 sm:h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
           ></span>
         </h2>
         <p
-          class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+          class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4"
         >
           Cozy at home? Having friends over? Busy day at work? We're here for
           you. Order in a few taps and we'll be right there - food in hand. Your
@@ -229,9 +122,11 @@
         </p>
       </div>
 
-      <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
+      <div
+        class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16 md:mb-20 lg:mb-24"
+      >
         <div
-          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
         >
           <img
             src="img/service1.jpg"
@@ -239,11 +134,17 @@
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+        <div
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
+        >
+          <h3
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+          >
             6500+ restaurants at your fingertips
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+          >
             Whatever you're in the mood for, with Careem find all of your
             favourites in one place. Discover new dishes with incredible
             selection from local favorites to international cuisine.
@@ -251,9 +152,11 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-24">
+      <div
+        class="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16 md:mb-20 lg:mb-24"
+      >
         <div
-          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
         >
           <img
             src="img/service2.jpg"
@@ -261,20 +164,28 @@
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+        <div
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
+        >
+          <h3
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+          >
             Save 50% off on first 3 orders, code HALF3
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+          >
             We always offer the best value. Use this promo for an extra special
             welcome. New customers get unbeatable deals on their first orders.
           </p>
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
+      <div
+        class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16 md:mb-20 lg:mb-24"
+      >
         <div
-          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
         >
           <img
             src="img/service3.jpg"
@@ -282,11 +193,17 @@
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+        <div
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
+        >
+          <h3
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+          >
             Get your food delivered on time
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+          >
             We know that nothing tastes better than on time. Order with
             confidence for an experience you can set your clock by. Track your
             order in real-time from restaurant to your door.
@@ -294,9 +211,11 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-24">
+      <div
+        class="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16 md:mb-20 lg:mb-24"
+      >
         <div
-          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
         >
           <img
             src="img/service4.jpg"
@@ -304,11 +223,17 @@
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+        <div
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
+        >
+          <h3
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+          >
             Plus, skip the delivery fee with Careem Plus
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+          >
             Unlock free delivery when you subscribe to Careem Plus. Start your
             free trial today and enjoy unlimited free deliveries plus exclusive
             perks and discounts.
@@ -316,9 +241,11 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
+      <div
+        class="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16 md:mb-20 lg:mb-24"
+      >
         <div
-          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
         >
           <img
             src="img/service5.webp"
@@ -326,11 +253,17 @@
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+        <div
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
+        >
+          <h3
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+          >
             Reliable service
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+          >
             Count on us to add flavour to your cozy nights in, celebrations and
             more. We're committed to providing consistent, high-quality service
             every single time.
@@ -338,9 +271,11 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-24">
+      <div
+        class="flex flex-col lg:flex-row-reverse items-center gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16 md:mb-20 lg:mb-24"
+      >
         <div
-          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
         >
           <img
             src="img/service6.webp"
@@ -348,11 +283,17 @@
             class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
           />
         </div>
-        <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+        <div
+          class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
+        >
+          <h3
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+          >
             A team that cares
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+          >
             Need to reach out? Our Care team is available 24/7 to help you out.
             From order tracking to special requests, we're always here for you.
           </p>
@@ -361,68 +302,80 @@
     </section>
 
     <!-- ==================== EXPLORE SECTION ==================== -->
-    <section class="w-[90%] max-w-7xl mx-auto my-24">
-      <div class="text-center mb-16">
+    <section
+      class="w-full sm:w-[95%] md:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 md:px-0 my-12 sm:my-16 md:my-20 lg:my-24"
+    >
+      <div class="text-center mb-8 sm:mb-12 md:mb-16">
         <h2
-          class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block"
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5 relative inline-block px-4"
         >
           Explore more with Careem
           <span
-            class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
+            class="absolute -bottom-2 sm:-bottom-3 left-1/2 transform -translate-x-1/2 w-16 sm:w-20 h-0.5 sm:h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
           ></span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        <p
+          class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4"
+        >
           Beyond food delivery, discover everything Careem has to offer
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
+      >
         <div
-          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-2xl p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
+          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
         >
-          <div class="mb-6">
+          <div class="mb-4 sm:mb-5 md:mb-6">
             <img
               src="img/car.svg"
               alt="Ride"
-              class="w-32 h-auto hover:scale-110 transition-transform duration-300"
+              class="w-24 sm:w-28 md:w-32 h-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <h4 class="text-2xl font-bold text-gray-800 mb-3">Ride</h4>
-          <p class="text-gray-600 leading-relaxed">
+          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">
+            Ride
+          </h4>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
             Simplifying lives, one ride at a time. Book a ride instantly and
             travel with comfort.
           </p>
         </div>
 
         <div
-          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-2xl p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
+          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
         >
-          <div class="mb-6">
+          <div class="mb-4 sm:mb-5 md:mb-6">
             <img
               src="img/cart.svg"
               alt="Quick Grocery"
-              class="w-32 h-auto hover:scale-110 transition-transform duration-300"
+              class="w-24 sm:w-28 md:w-32 h-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <h4 class="text-2xl font-bold text-gray-800 mb-3">Quick Grocery</h4>
-          <p class="text-gray-600 leading-relaxed">
+          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">
+            Quick Grocery
+          </h4>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
             Dubai's fastest grocery delivery. Get fresh groceries delivered to
             your doorstep.
           </p>
         </div>
 
         <div
-          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-2xl p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
+          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer sm:col-span-2 lg:col-span-1"
         >
-          <div class="mb-6">
+          <div class="mb-4 sm:mb-5 md:mb-6">
             <img
               src="img/CAREEM_PAY_LOGO_FULLCOLOUR_e161f9fe0a.png"
               alt="Pay"
-              class="w-32 h-auto hover:scale-110 transition-transform duration-300"
+              class="w-24 sm:w-28 md:w-32 h-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <h4 class="text-2xl font-bold text-gray-800 mb-3">Pay</h4>
-          <p class="text-gray-600 leading-relaxed">
+          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">
+            Pay
+          </h4>
+          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
             Send, spend and hold money with Careem Pay. Fast, secure, and
             convenient.
           </p>
@@ -432,32 +385,29 @@
 
     <!-- ==================== CTA SECTION ==================== -->
     <section
-      class="w-[90%] max-w-7xl mx-auto my-20 rounded-3xl overflow-hidden shadow-2xl relative"
-      style="
-        background: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0.7) 0%,
-            rgba(0, 0, 0, 0.5) 100%
-          ),
-          url('img/footer_banner_v1_1_3367407bbb.png');
-        background-size: cover;
-        background-position: center;
-      "
+      class="w-full sm:w-[95%] md:w-[90%] max-w-7xl mx-auto my-12 sm:my-16 md:my-20 rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl relative bg-cover bg-center bg-no-repeat"
+      style="background-image: url('img/footer_banner_v1_1_3367407bbb.png')"
     >
       <div
         class="absolute inset-0 bg-gradient-to-r from-careem-green/20 to-careem-green-dark/20 z-10"
       ></div>
-      <div class="relative z-20 px-12 md:px-20 py-20 text-center">
-        <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-5">
+      <div
+        class="relative z-20 px-4 sm:px-6 md:px-12 lg:px-20 py-12 sm:py-16 md:py-20 text-center"
+      >
+        <h3
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-3 sm:mb-4 md:mb-5"
+        >
           Partner with Careem
         </h3>
-        <p class="text-xl text-white/90 max-w-2xl mx-auto mb-10">
+        <p
+          class="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto mb-6 sm:mb-8 md:mb-10"
+        >
           Grow your restaurant sales with us by partnering with Careem. Join
           thousands of successful partners today.
         </p>
         <a href="partners.html">
           <button
-            class="px-12 py-5 rounded-full font-bold text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            class="px-8 sm:px-10 md:px-12 py-3 sm:py-4 md:py-5 rounded-full font-bold text-base sm:text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
             Sign Up
           </button>
@@ -466,33 +416,43 @@
     </section>
 
     <!-- ==================== FOOTER ==================== -->
-    <footer class="w-[90%] max-w-7xl mx-auto my-20">
+    <footer
+      class="w-full sm:w-[95%] md:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 md:px-0 my-12 sm:my-16 md:my-20"
+    >
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-10 mb-8 sm:mb-10 pb-8 sm:pb-10 border-b border-gray-200"
       >
-        <div class="flex flex-col gap-5">
-          <img src="img/logo.svg" alt="Careem Logo" class="w-36 h-auto mb-5" />
-          <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-4 sm:gap-5">
+          <img
+            src="img/logo.svg"
+            alt="Careem Logo"
+            class="w-32 sm:w-36 h-auto mb-3 sm:mb-5"
+          />
+          <div class="flex flex-col gap-2 sm:gap-3">
             <img
               src="img/app-store.webp"
               alt="App Store"
-              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
+              class="w-28 sm:w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
             />
             <img
               src="img/google-play.webp"
               alt="Google Play"
-              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
+              class="w-28 sm:w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
             />
             <img
               src="img/apk-download.webp"
               alt="APK Download"
-              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
+              class="w-28 sm:w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
             />
           </div>
         </div>
 
         <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">Products</h6>
+          <h6
+            class="text-base sm:text-lg font-bold text-careem-green mb-3 sm:mb-4 md:mb-5"
+          >
+            Products
+          </h6>
           <ul class="space-y-3">
             <li>
               <a
@@ -547,7 +507,11 @@
         </div>
 
         <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">Company</h6>
+          <h6
+            class="text-base sm:text-lg font-bold text-careem-green mb-3 sm:mb-4 md:mb-5"
+          >
+            Company
+          </h6>
           <ul class="space-y-3">
             <li>
               <a
@@ -581,7 +545,9 @@
         </div>
 
         <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">
+          <h6
+            class="text-base sm:text-lg font-bold text-careem-green mb-3 sm:mb-4 md:mb-5"
+          >
             Safety and Security
           </h6>
           <ul class="space-y-3">
@@ -610,7 +576,11 @@
         </div>
 
         <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">Support</h6>
+          <h6
+            class="text-base sm:text-lg font-bold text-careem-green mb-3 sm:mb-4 md:mb-5"
+          >
+            Support
+          </h6>
           <ul class="space-y-3">
             <li>
               <a
@@ -644,13 +614,17 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row justify-between items-center gap-5">
-        <p class="text-sm text-gray-500">
+      <div
+        class="flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-5 text-center sm:text-left"
+      >
+        <p class="text-xs sm:text-sm text-gray-500 order-3 sm:order-1">
           All rights reserved. Careem, an Uber company © 2024
         </p>
-        <div class="flex gap-8">
+        <div
+          class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 order-2"
+        >
           <p
-            class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+            class="text-xs sm:text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
           >
             Terms of Service
             <span
@@ -658,7 +632,7 @@
             ></span>
           </p>
           <p
-            class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+            class="text-xs sm:text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
           >
             Privacy Policy
             <span
@@ -666,45 +640,28 @@
             ></span>
           </p>
         </div>
-        <div class="flex gap-4">
+        <div class="flex gap-3 sm:gap-4 order-1 sm:order-3">
           <i
-            class="bx bxl-facebook-circle text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+            class="bx bxl-facebook-circle text-careem-green text-xl sm:text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
           ></i>
           <i
-            class="bx bxl-twitter text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+            class="bx bxl-twitter text-careem-green text-xl sm:text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
           ></i>
           <i
-            class="bx bxl-linkedin text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+            class="bx bxl-linkedin text-careem-green text-xl sm:text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
           ></i>
           <i
-            class="bx bxl-instagram text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+            class="bx bxl-instagram text-careem-green text-xl sm:text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
           ></i>
         </div>
       </div>
     </footer>
 
+    <!-- Navbar Component -->
+    <script src="components/navbar.js"></script>
     <script>
-      const menuBtn = document.getElementById("menu-icon");
-      const sideNav = document.getElementById("sideNav");
-
-      menuBtn.onclick = function () {
-        sideNav.classList.toggle("translate-x-full");
-      };
-
-      // Close menu when clicking on a link
-      const navLinks = document.querySelectorAll("#sideNav a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          sideNav.classList.add("translate-x-full");
-        });
-      });
-
-      // Close menu when clicking outside
-      document.addEventListener("click", (e) => {
-        if (!sideNav.contains(e.target) && !menuBtn.contains(e.target)) {
-          sideNav.classList.add("translate-x-full");
-        }
-      });
+      // Load navbar with active page
+      loadNavbar("index.html");
     </script>
   </body>
 </html>

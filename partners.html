@@ -38,67 +38,8 @@
     <title>Partners - Careem</title>
   </head>
   <body class="font-sans bg-white text-gray-800">
-    <!-- ==================== HEADER ==================== -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-6">
-          <div class="w-36 h-7">
-            <a href="index.html">
-              <img src="img/logo.svg" alt="Careem Logo" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300" />
-            </a>
-          </div>
-
-          <ul class="hidden lg:flex items-center gap-10" id="desktopNav">
-            <li>
-              <a href="services.html" class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300">
-                Services
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"></span>
-              </a>
-            </li>
-            <li>
-              <a href="about.html" class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300">
-                About Us
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"></span>
-              </a>
-            </li>
-            <li>
-              <a href="partners.html" class="text-careem-green font-semibold text-base relative pb-1">
-                Partners
-                <span class="absolute bottom-0 left-0 w-full h-0.5 bg-careem-green"></span>
-              </a>
-            </li>
-            <li>
-              <a href="contact.html" class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300">
-                Help
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"></span>
-              </a>
-            </li>
-          </ul>
-
-          <div class="flex items-center gap-5">
-            <button class="hidden md:block px-7 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-              Book Ride
-            </button>
-            <div class="hidden lg:flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 cursor-pointer">
-              <i class="bx bx-globe text-careem-green text-xl"></i>
-              <a href="#" class="text-gray-800 font-medium">English</a>
-              <i class="bx bx-chevron-down text-careem-green text-xl"></i>
-            </div>
-            <i class="bx bx-menu text-careem-green text-4xl lg:hidden cursor-pointer hover:scale-110 transition-transform duration-300" id="menu-icon"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div class="lg:hidden fixed top-0 right-0 w-80 h-screen bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50" id="sideNav">
-        <div class="flex flex-col p-10 pt-24">
-          <a href="services.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">Services</a>
-          <a href="about.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">About Us</a>
-          <a href="partners.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">Partners</a>
-          <a href="contact.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">Help</a>
-        </div>
-      </div>
-    </header>
+    <!-- Navbar Component Container -->
+    <div id="navbar-container"></div>
 
     <!-- ==================== PAGE HEADER ==================== -->
     <section class="w-[90%] max-w-7xl mx-auto my-16 text-center py-20 px-6 rounded-3xl bg-gradient-to-r from-careem-green to-careem-green-dark text-white shadow-xl">
@@ -330,26 +271,11 @@
       </div>
     </footer>
 
+    <!-- Navbar Component -->
+    <script src="components/navbar.js"></script>
     <script>
-      const menuBtn = document.getElementById("menu-icon");
-      const sideNav = document.getElementById("sideNav");
-
-      menuBtn.onclick = function () {
-        sideNav.classList.toggle("translate-x-full");
-      };
-
-      const navLinks = document.querySelectorAll("#sideNav a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          sideNav.classList.add("translate-x-full");
-        });
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!sideNav.contains(e.target) && !menuBtn.contains(e.target)) {
-          sideNav.classList.add("translate-x-full");
-        }
-      });
+      // Load navbar with active page
+      loadNavbar('partners.html');
     </script>
   </body>
 </html>

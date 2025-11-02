@@ -21,12 +21,12 @@
         theme: {
           extend: {
             colors: {
-              'careem-green': '#18aa33',
-              'careem-green-dark': '#0f6b20',
-              'careem-green-light': '#4fd167',
+              "careem-green": "#18aa33",
+              "careem-green-dark": "#0f6b20",
+              "careem-green-light": "#4fd167",
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ["Inter", "sans-serif"],
             },
           },
         },
@@ -38,123 +38,112 @@
     <title>Services - Careem</title>
   </head>
   <body class="font-sans bg-white text-gray-800">
-    <!-- ==================== HEADER ==================== -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-6">
-          <div class="w-36 h-7">
-            <a href="index.html">
-              <img src="img/logo.svg" alt="Careem Logo" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300" />
-            </a>
-          </div>
-
-          <ul class="hidden lg:flex items-center gap-10" id="desktopNav">
-            <li>
-              <a href="services.html" class="text-careem-green font-semibold text-base relative pb-1">
-                Services
-                <span class="absolute bottom-0 left-0 w-full h-0.5 bg-careem-green"></span>
-              </a>
-            </li>
-            <li>
-              <a href="about.html" class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300">
-                About Us
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"></span>
-              </a>
-            </li>
-            <li>
-              <a href="partners.html" class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300">
-                Partners
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"></span>
-              </a>
-            </li>
-            <li>
-              <a href="contact.html" class="text-gray-800 font-semibold text-base relative pb-1 hover:text-careem-green transition-colors duration-300">
-                Help
-                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 hover:w-full"></span>
-              </a>
-            </li>
-          </ul>
-
-          <div class="flex items-center gap-5">
-            <button class="hidden md:block px-7 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-              Book Ride
-            </button>
-            <div class="hidden lg:flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors duration-300 cursor-pointer">
-              <i class="bx bx-globe text-careem-green text-xl"></i>
-              <a href="#" class="text-gray-800 font-medium">English</a>
-              <i class="bx bx-chevron-down text-careem-green text-xl"></i>
-            </div>
-            <i class="bx bx-menu text-careem-green text-4xl lg:hidden cursor-pointer hover:scale-110 transition-transform duration-300" id="menu-icon"></i>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div class="lg:hidden fixed top-0 right-0 w-80 h-screen bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50" id="sideNav">
-        <div class="flex flex-col p-10 pt-24">
-          <a href="services.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">Services</a>
-          <a href="about.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">About Us</a>
-          <a href="partners.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">Partners</a>
-          <a href="contact.html" class="py-4 text-careem-green text-lg font-semibold border-b border-gray-200">Help</a>
-        </div>
-      </div>
-    </header>
+    <!-- Navbar Component Container -->
+    <div id="navbar-container"></div>
 
     <!-- ==================== PAGE HEADER ==================== -->
-    <section class="w-[90%] max-w-7xl mx-auto my-16 text-center py-20 px-6 rounded-3xl bg-gradient-to-r from-careem-green to-careem-green-dark text-white shadow-xl">
+    <section
+      class="w-[90%] max-w-7xl mx-auto my-16 text-center py-20 px-6 rounded-3xl bg-gradient-to-r from-careem-green to-careem-green-dark text-white shadow-xl"
+    >
       <h1 class="text-5xl md:text-6xl font-extrabold mb-5">Our Services</h1>
-      <p class="text-xl md:text-2xl opacity-95 max-w-3xl mx-auto">Everything you need, all in one app. From rides to food, groceries to payments.</p>
+      <p class="text-xl md:text-2xl opacity-95 max-w-3xl mx-auto">
+        Everything you need, all in one app. From rides to food, groceries to
+        payments.
+      </p>
     </section>
 
     <!-- ==================== SERVICES GRID ==================== -->
     <section class="w-[90%] max-w-7xl mx-auto my-24">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+        <div
+          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+        >
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
+          >
             <i class="bx bx-car"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-800 mb-4">Ride</h3>
-          <p class="text-gray-600 leading-relaxed">Book a ride instantly. Whether you're going to work, running errands, or heading out for the night, get there safely and comfortably.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Book a ride instantly. Whether you're going to work, running
+            errands, or heading out for the night, get there safely and
+            comfortably.
+          </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+        <div
+          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+        >
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
+          >
             <i class="bx bx-restaurant"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-800 mb-4">Food Delivery</h3>
-          <p class="text-gray-600 leading-relaxed">Order from 6500+ restaurants. Track your order in real-time and get your favorite meals delivered fresh to your door.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Order from 6500+ restaurants. Track your order in real-time and get
+            your favorite meals delivered fresh to your door.
+          </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+        <div
+          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+        >
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
+          >
             <i class="bx bx-shopping-bag"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-800 mb-4">Quick Grocery</h3>
-          <p class="text-gray-600 leading-relaxed">Dubai's fastest grocery delivery. Get fresh produce, daily essentials, and more delivered in minutes, not hours.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Dubai's fastest grocery delivery. Get fresh produce, daily
+            essentials, and more delivered in minutes, not hours.
+          </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+        <div
+          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+        >
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
+          >
             <i class="bx bx-credit-card"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-800 mb-4">Careem Pay</h3>
-          <p class="text-gray-600 leading-relaxed">Send, spend, and hold money with Careem Pay. A fast, secure, and convenient way to manage your finances.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Send, spend, and hold money with Careem Pay. A fast, secure, and
+            convenient way to manage your finances.
+          </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+        <div
+          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+        >
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
+          >
             <i class="bx bx-crown"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-800 mb-4">Careem Plus</h3>
-          <p class="text-gray-600 leading-relaxed">Unlock unlimited free deliveries, exclusive discounts, and premium perks. Start your free trial today.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Unlock unlimited free deliveries, exclusive discounts, and premium
+            perks. Start your free trial today.
+          </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+        <div
+          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+        >
+          <div
+            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
+          >
             <i class="bx bx-buildings"></i>
           </div>
           <h3 class="text-2xl font-bold text-gray-800 mb-4">Business Rides</h3>
-          <p class="text-gray-600 leading-relaxed">Enterprise solutions for your business. Manage company rides, track expenses, and streamline corporate transportation.</p>
+          <p class="text-gray-600 leading-relaxed">
+            Enterprise solutions for your business. Manage company rides, track
+            expenses, and streamline corporate transportation.
+          </p>
         </div>
       </div>
     </section>
@@ -162,165 +151,353 @@
     <!-- ==================== DETAILED FEATURES ==================== -->
     <section class="w-[90%] max-w-7xl mx-auto my-24">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block">
+        <h2
+          class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block"
+        >
           Why Choose Careem
-          <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
+          <span
+            class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
+          ></span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Experience the convenience of having everything you need in one place</p>
+        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          Experience the convenience of having everything you need in one place
+        </p>
       </div>
 
       <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
-        <div class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
-          <img src="img/service1.jpg" alt="Wide Selection" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        <div
+          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+        >
+          <img
+            src="img/service1.jpg"
+            alt="Wide Selection"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">6500+ Restaurants & Partners</h3>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+            6500+ Restaurants & Partners
+          </h3>
           <p class="text-lg text-gray-600 leading-relaxed">
-            With over 6500 restaurants and business partners, we offer the widest selection 
-            of options. From local favorites to international chains, discover new flavors 
-            and enjoy your trusted favorites.
+            With over 6500 restaurants and business partners, we offer the
+            widest selection of options. From local favorites to international
+            chains, discover new flavors and enjoy your trusted favorites.
           </p>
         </div>
       </div>
 
       <div class="flex flex-col lg:flex-row-reverse items-center gap-12 mb-24">
-        <div class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
-          <img src="img/service3.jpg" alt="Fast Delivery" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        <div
+          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+        >
+          <img
+            src="img/service3.jpg"
+            alt="Fast Delivery"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">Fast & Reliable Delivery</h3>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+            Fast & Reliable Delivery
+          </h3>
           <p class="text-lg text-gray-600 leading-relaxed">
-            Our advanced logistics network ensures your orders arrive on time, every time. 
-            Track your delivery in real-time and receive updates at every step of the journey.
+            Our advanced logistics network ensures your orders arrive on time,
+            every time. Track your delivery in real-time and receive updates at
+            every step of the journey.
           </p>
         </div>
       </div>
 
       <div class="flex flex-col lg:flex-row items-center gap-12 mb-24">
-        <div class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
-          <img src="img/service5.webp" alt="24/7 Support" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        <div
+          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
+        >
+          <img
+            src="img/service5.webp"
+            alt="24/7 Support"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">24/7 Customer Support</h3>
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+            24/7 Customer Support
+          </h3>
           <p class="text-lg text-gray-600 leading-relaxed">
-            Our dedicated care team is available around the clock to assist you. Whether you 
-            have questions, need help with an order, or want to provide feedback, we're here for you.
+            Our dedicated care team is available around the clock to assist you.
+            Whether you have questions, need help with an order, or want to
+            provide feedback, we're here for you.
           </p>
         </div>
       </div>
     </section>
 
     <!-- ==================== CTA SECTION ==================== -->
-    <section class="w-[90%] max-w-7xl mx-auto my-20 rounded-3xl overflow-hidden shadow-2xl relative"
-      style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%), url('img/footer_banner_v1_1_3367407bbb.png'); background-size: cover; background-position: center;">
-      <div class="absolute inset-0 bg-gradient-to-r from-careem-green/20 to-careem-green-dark/20 z-10"></div>
+    <section
+      class="w-[90%] max-w-7xl mx-auto my-20 rounded-3xl overflow-hidden shadow-2xl relative"
+      style="
+        background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+          ),
+          url('img/footer_banner_v1_1_3367407bbb.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-careem-green/20 to-careem-green-dark/20 z-10"
+      ></div>
       <div class="relative z-20 px-12 md:px-20 py-20 text-center">
-        <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-5">Ready to Get Started?</h3>
-        <p class="text-xl text-white/90 max-w-2xl mx-auto mb-10">Download the Careem app and experience the future of convenience.</p>
+        <h3 class="text-4xl md:text-5xl font-extrabold text-white mb-5">
+          Ready to Get Started?
+        </h3>
+        <p class="text-xl text-white/90 max-w-2xl mx-auto mb-10">
+          Download the Careem app and experience the future of convenience.
+        </p>
         <div class="flex flex-wrap justify-center gap-4 mt-8">
-          <img src="img/app-store.webp" alt="App Store" class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer" />
-          <img src="img/google-play.webp" alt="Google Play" class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer" />
-          <img src="img/apk-download.webp" alt="APK Download" class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer" />
+          <img
+            src="img/app-store.webp"
+            alt="App Store"
+            class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+          />
+          <img
+            src="img/google-play.webp"
+            alt="Google Play"
+            class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+          />
+          <img
+            src="img/apk-download.webp"
+            alt="APK Download"
+            class="w-36 h-auto rounded-lg hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+          />
         </div>
       </div>
     </section>
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="w-[90%] max-w-7xl mx-auto my-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200"
+      >
         <div class="flex flex-col gap-5">
           <img src="img/logo.svg" alt="Careem Logo" class="w-36 h-auto mb-5" />
           <div class="flex flex-col gap-3">
-            <img src="img/app-store.webp" alt="App Store" class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer" />
-            <img src="img/google-play.webp" alt="Google Play" class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer" />
-            <img src="img/apk-download.webp" alt="APK Download" class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer" />
+            <img
+              src="img/app-store.webp"
+              alt="App Store"
+              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
+            />
+            <img
+              src="img/google-play.webp"
+              alt="Google Play"
+              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
+            />
+            <img
+              src="img/apk-download.webp"
+              alt="APK Download"
+              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
+            />
           </div>
         </div>
 
         <div>
           <h6 class="text-lg font-bold text-careem-green mb-5">Products</h6>
           <ul class="space-y-3">
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Ride</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Food</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Careem Plus</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Quick Grocery</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Pay</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captions</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Business Rides</a></li>
+            <li>
+              <a
+                href="services.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Ride</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Food</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Careem Plus</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Quick Grocery</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Pay</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Captions</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Business Rides</a
+              >
+            </li>
           </ul>
         </div>
 
         <div>
           <h6 class="text-lg font-bold text-careem-green mb-5">Company</h6>
           <ul class="space-y-3">
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">About Us</a></li>
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Life at Careem</a></li>
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Engineering at Careem</a></li>
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Join Careem</a></li>
+            <li>
+              <a
+                href="about.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Life at Careem</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Engineering at Careem</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Join Careem</a
+              >
+            </li>
           </ul>
         </div>
 
         <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">Safety and Security</h6>
+          <h6 class="text-lg font-bold text-careem-green mb-5">
+            Safety and Security
+          </h6>
           <ul class="space-y-3">
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Customer Safety</a></li>
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captain Safety</a></li>
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Information Security</a></li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Customer Safety</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Captain Safety</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Information Security</a
+              >
+            </li>
           </ul>
         </div>
 
         <div>
           <h6 class="text-lg font-bold text-careem-green mb-5">Support</h6>
           <ul class="space-y-3">
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Help Center</a></li>
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Contact Us</a></li>
-            <li><a href="#" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Book Your Ride</a></li>
-            <li><a href="partners.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Become a Partner</a></li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Help Center</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Book Your Ride</a
+              >
+            </li>
+            <li>
+              <a
+                href="partners.html"
+                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                >Become a Partner</a
+              >
+            </li>
           </ul>
         </div>
       </div>
 
       <div class="flex flex-col md:flex-row justify-between items-center gap-5">
-        <p class="text-sm text-gray-500">All rights reserved. Careem, an Uber company © 2024</p>
+        <p class="text-sm text-gray-500">
+          All rights reserved. Careem, an Uber company © 2024
+        </p>
         <div class="flex gap-8">
-          <p class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
+          <p
+            class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+          >
             Terms of Service
-            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"></span>
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"
+            ></span>
           </p>
-          <p class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
+          <p
+            class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+          >
             Privacy Policy
-            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"></span>
+            <span
+              class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"
+            ></span>
           </p>
         </div>
         <div class="flex gap-4">
-          <i class="bx bxl-facebook-circle text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
-          <i class="bx bxl-twitter text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
-          <i class="bx bxl-linkedin text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
-          <i class="bx bxl-instagram text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
+          <i
+            class="bx bxl-facebook-circle text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+          ></i>
+          <i
+            class="bx bxl-twitter text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+          ></i>
+          <i
+            class="bx bxl-linkedin text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+          ></i>
+          <i
+            class="bx bxl-instagram text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+          ></i>
         </div>
       </div>
     </footer>
 
+    <!-- Navbar Component -->
+    <script src="components/navbar.js"></script>
     <script>
-      const menuBtn = document.getElementById("menu-icon");
-      const sideNav = document.getElementById("sideNav");
-
-      menuBtn.onclick = function () {
-        sideNav.classList.toggle("translate-x-full");
-      };
-
-      const navLinks = document.querySelectorAll("#sideNav a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          sideNav.classList.add("translate-x-full");
-        });
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!sideNav.contains(e.target) && !menuBtn.contains(e.target)) {
-          sideNav.classList.add("translate-x-full");
-        }
-      });
+      // Load navbar with active page
+      loadNavbar("services.html");
     </script>
   </body>
 </html>
