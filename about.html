@@ -18,6 +18,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -37,7 +38,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Careem</title>
   </head>
-  <body class="font-sans bg-white text-gray-800">
+  <body class="font-sans bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 transition-colors duration-300">
     <!-- Navbar Component Container -->
     <div id="navbar-container"></div>
 
@@ -50,11 +51,11 @@
     <!-- ==================== ABOUT CONTENT ==================== -->
     <section class="w-[90%] max-w-7xl mx-auto my-24">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block">
           Our Story
           <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">From a small startup to a regional powerhouse</p>
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">From a small startup to a regional powerhouse</p>
       </div>
 
       <div class="flex flex-col lg:flex-row items-center gap-12">
@@ -62,14 +63,14 @@
           <img src="img/service2.jpg" alt="Careem Story" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">Building the Future</h3>
-          <p class="text-lg text-gray-600 leading-relaxed mb-5">
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-5">Building the Future</h3>
+          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
             Founded in 2012, Careem started with a simple mission: to simplify lives. 
             What began as a ride-hailing service has evolved into a comprehensive platform 
             that serves millions across the region. Today, we're part of the Uber family, 
             combining local expertise with global innovation.
           </p>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             We've grown from a small team to over 4,000 employees, serving more than 100 
             cities across the Middle East, North Africa, and Pakistan. Our commitment to 
             simplifying lives extends beyond transportation - we're building a platform 
@@ -82,60 +83,60 @@
     <!-- ==================== VALUES SECTION ==================== -->
     <section class="w-[90%] max-w-7xl mx-auto my-24">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block">
           Our Values
           <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">The principles that guide everything we do</p>
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">The principles that guide everything we do</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
             <i class="bx bx-heart"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Customer First</h3>
-          <p class="text-gray-600 leading-relaxed">Every decision we make starts with our customers. We're committed to delivering exceptional experiences that exceed expectations.</p>
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Customer First</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Every decision we make starts with our customers. We're committed to delivering exceptional experiences that exceed expectations.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
             <i class="bx bx-shield"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Safety & Security</h3>
-          <p class="text-gray-600 leading-relaxed">Safety is our top priority. We implement rigorous safety measures and continuously work to improve security for everyone in our ecosystem.</p>
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Safety & Security</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Safety is our top priority. We implement rigorous safety measures and continuously work to improve security for everyone in our ecosystem.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
             <i class="bx bx-trophy"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Excellence</h3>
-          <p class="text-gray-600 leading-relaxed">We strive for excellence in everything we do. From technology to service delivery, we set high standards and continuously raise the bar.</p>
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Excellence</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We strive for excellence in everything we do. From technology to service delivery, we set high standards and continuously raise the bar.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
             <i class="bx bx-group"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Empowerment</h3>
-          <p class="text-gray-600 leading-relaxed">We believe in empowering our captains, partners, and employees. By supporting their success, we create value for everyone.</p>
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Empowerment</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We believe in empowering our captains, partners, and employees. By supporting their success, we create value for everyone.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
             <i class="bx bx-lightbulb"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Innovation</h3>
-          <p class="text-gray-600 leading-relaxed">Innovation is at our core. We continuously invest in technology and new solutions to improve the lives of our customers and partners.</p>
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Innovation</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Innovation is at our core. We continuously invest in technology and new solutions to improve the lives of our customers and partners.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
             <i class="bx bx-world"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Community Impact</h3>
-          <p class="text-gray-600 leading-relaxed">We're committed to making a positive impact in the communities we serve. Through our platform, we create opportunities and support local economies.</p>
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Community Impact</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">We're committed to making a positive impact in the communities we serve. Through our platform, we create opportunities and support local economies.</p>
         </div>
       </div>
     </section>
@@ -143,11 +144,11 @@
     <!-- ==================== LIFE AT CAREEM ==================== -->
     <section class="w-[90%] max-w-7xl mx-auto my-24">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block">
           Life at Careem
           <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Join a team that's building the future</p>
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">Join a team that's building the future</p>
       </div>
 
       <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
@@ -155,13 +156,13 @@
           <img src="img/service4.jpg" alt="Life at Careem" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">A Diverse & Inclusive Culture</h3>
-          <p class="text-lg text-gray-600 leading-relaxed mb-5">
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-5">A Diverse & Inclusive Culture</h3>
+          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
             At Careem, we celebrate diversity and inclusion. Our team represents over 
             70 nationalities, bringing together different perspectives, ideas, and talents. 
             We believe that diverse teams create better solutions and drive innovation.
           </p>
-          <p class="text-lg text-gray-600 leading-relaxed mb-8">
+          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
             We offer competitive benefits, continuous learning opportunities, and a 
             culture that encourages growth. Whether you're in engineering, operations, 
             marketing, or any other field, you'll find opportunities to make an impact.
@@ -178,34 +179,34 @@
     <!-- ==================== ENGINEERING AT CAREEM ==================== -->
     <section class="w-[90%] max-w-6xl mx-auto my-24">
       <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block">
           Engineering at Careem
           <span class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Building technology that scales</p>
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">Building technology that scales</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Scale & Impact</h3>
-          <p class="text-gray-600 leading-relaxed">Build products that serve millions of users across multiple countries. Your code impacts real lives every day.</p>
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Scale & Impact</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Build products that serve millions of users across multiple countries. Your code impacts real lives every day.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Innovation</h3>
-          <p class="text-gray-600 leading-relaxed">Work with cutting-edge technologies and solve complex problems. From machine learning to distributed systems, the challenges are exciting.</p>
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Innovation</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Work with cutting-edge technologies and solve complex problems. From machine learning to distributed systems, the challenges are exciting.</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Growth</h3>
-          <p class="text-gray-600 leading-relaxed">Continuous learning opportunities, mentorship programs, and the chance to work with some of the best engineers in the region.</p>
+        <div class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Growth</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Continuous learning opportunities, mentorship programs, and the chance to work with some of the best engineers in the region.</p>
         </div>
       </div>
     </section>
 
     <!-- ==================== FOOTER ==================== -->
     <footer class="w-[90%] max-w-7xl mx-auto my-20">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200 dark:border-gray-800">
         <div class="flex flex-col gap-5">
           <img src="img/logo.svg" alt="Careem Logo" class="w-36 h-auto mb-5" />
           <div class="flex flex-col gap-3">
@@ -218,42 +219,42 @@
         <div>
           <h6 class="text-lg font-bold text-careem-green mb-5">Products</h6>
           <ul class="space-y-3">
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Ride</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Food</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Careem Plus</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Quick Grocery</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Pay</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captions</a></li>
-            <li><a href="services.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Business Rides</a></li>
+            <li><a href="services.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Ride</a></li>
+            <li><a href="services.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Food</a></li>
+            <li><a href="services.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Careem Plus</a></li>
+            <li><a href="services.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Quick Grocery</a></li>
+            <li><a href="services.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Pay</a></li>
+            <li><a href="services.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captions</a></li>
+            <li><a href="services.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Business Rides</a></li>
           </ul>
         </div>
 
         <div>
           <h6 class="text-lg font-bold text-careem-green mb-5">Company</h6>
           <ul class="space-y-3">
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">About Us</a></li>
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Life at Careem</a></li>
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Engineering at Careem</a></li>
-            <li><a href="about.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Join Careem</a></li>
+            <li><a href="about.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">About Us</a></li>
+            <li><a href="about.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Life at Careem</a></li>
+            <li><a href="about.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Engineering at Careem</a></li>
+            <li><a href="about.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Join Careem</a></li>
           </ul>
         </div>
 
         <div>
           <h6 class="text-lg font-bold text-careem-green mb-5">Safety and Security</h6>
           <ul class="space-y-3">
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Customer Safety</a></li>
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captain Safety</a></li>
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Information Security</a></li>
+            <li><a href="contact.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Customer Safety</a></li>
+            <li><a href="contact.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captain Safety</a></li>
+            <li><a href="contact.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Information Security</a></li>
           </ul>
         </div>
 
         <div>
           <h6 class="text-lg font-bold text-careem-green mb-5">Support</h6>
           <ul class="space-y-3">
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Help Center</a></li>
-            <li><a href="contact.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Contact Us</a></li>
-            <li><a href="#" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Book Your Ride</a></li>
-            <li><a href="partners.html" class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Become a Partner</a></li>
+            <li><a href="contact.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Help Center</a></li>
+            <li><a href="contact.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Contact Us</a></li>
+            <li><a href="#" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Book Your Ride</a></li>
+            <li><a href="partners.html" class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Become a Partner</a></li>
           </ul>
         </div>
       </div>
@@ -261,11 +262,11 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-5">
         <p class="text-sm text-gray-500">All rights reserved. Careem, an Uber company © 2024</p>
         <div class="flex gap-8">
-          <p class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
+          <p class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
             Terms of Service
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"></span>
           </p>
-          <p class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
+          <p class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
             Privacy Policy
             <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"></span>
           </p>

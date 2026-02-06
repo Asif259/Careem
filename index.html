@@ -18,6 +18,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -38,7 +39,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Careem - Simplifying Lives</title>
   </head>
-  <body class="font-sans bg-white text-gray-800">
+  <body class="font-sans bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 transition-colors duration-300">
     <!-- Navbar Component Container -->
     <div id="navbar-container"></div>
 
@@ -106,7 +107,7 @@
     >
       <div class="text-center mb-8 sm:mb-12 md:mb-16">
         <h2
-          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5 relative inline-block px-4"
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4 md:mb-5 relative inline-block px-4"
         >
           We'll bring your meal, to you
           <span
@@ -114,7 +115,7 @@
           ></span>
         </h2>
         <p
-          class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4"
+          class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed px-4"
         >
           Cozy at home? Having friends over? Busy day at work? We're here for
           you. Order in a few taps and we'll be right there - food in hand. Your
@@ -138,12 +139,12 @@
           class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
         >
           <h3
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4 md:mb-5"
           >
             6500+ restaurants at your fingertips
           </h3>
           <p
-            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
           >
             Whatever you're in the mood for, with Careem find all of your
             favourites in one place. Discover new dishes with incredible
@@ -168,12 +169,12 @@
           class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
         >
           <h3
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4 md:mb-5"
           >
             Save 50% off on first 3 orders, code HALF3
           </h3>
           <p
-            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
           >
             We always offer the best value. Use this promo for an extra special
             welcome. New customers get unbeatable deals on their first orders.
@@ -197,12 +198,12 @@
           class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
         >
           <h3
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4 md:mb-5"
           >
             Get your food delivered on time
           </h3>
           <p
-            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
           >
             We know that nothing tastes better than on time. Order with
             confidence for an experience you can set your clock by. Track your
@@ -227,12 +228,12 @@
           class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
         >
           <h3
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4 md:mb-5"
           >
             Plus, skip the delivery fee with Careem Plus
           </h3>
           <p
-            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
           >
             Unlock free delivery when you subscribe to Careem Plus. Start your
             free trial today and enjoy unlimited free deliveries plus exclusive
@@ -257,12 +258,12 @@
           class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
         >
           <h3
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4 md:mb-5"
           >
             Reliable service
           </h3>
           <p
-            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
           >
             Count on us to add flavour to your cozy nights in, celebrations and
             more. We're committed to providing consistent, high-quality service
@@ -287,12 +288,12 @@
           class="flex-1 w-full sm:min-w-[280px] md:min-w-[300px] px-2 sm:px-4 md:px-5"
         >
           <h3
-            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-3 sm:mb-4 md:mb-5"
+            class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4 md:mb-5"
           >
             A team that cares
           </h3>
           <p
-            class="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed"
+            class="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed"
           >
             Need to reach out? Our Care team is available 24/7 to help you out.
             From order tracking to special requests, we're always here for you.
@@ -325,7 +326,7 @@
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8"
       >
         <div
-          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
+          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 dark:from-careem-green/10 dark:to-careem-green-dark/10 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center border-2 border-transparent dark:border-gray-800 hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
         >
           <div class="mb-4 sm:mb-5 md:mb-6">
             <img
@@ -334,17 +335,17 @@
               class="w-24 sm:w-28 md:w-32 h-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">
+          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2 sm:mb-3">
             Ride
           </h4>
-          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+          <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
             Simplifying lives, one ride at a time. Book a ride instantly and
             travel with comfort.
           </p>
         </div>
 
         <div
-          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center border-2 border-transparent hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
+          class="bg-gradient-to-br from-careem-green/5 to-careem-green-dark/5 dark:from-careem-green/10 dark:to-careem-green-dark/10 rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center border-2 border-transparent dark:border-gray-800 hover:border-careem-green hover:-translate-y-2 transition-all duration-300 hover:shadow-xl cursor-pointer"
         >
           <div class="mb-4 sm:mb-5 md:mb-6">
             <img
@@ -353,10 +354,10 @@
               class="w-24 sm:w-28 md:w-32 h-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">
+          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2 sm:mb-3">
             Quick Grocery
           </h4>
-          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+          <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
             Dubai's fastest grocery delivery. Get fresh groceries delivered to
             your doorstep.
           </p>
@@ -372,10 +373,10 @@
               class="w-24 sm:w-28 md:w-32 h-auto hover:scale-110 transition-transform duration-300"
             />
           </div>
-          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">
+          <h4 class="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2 sm:mb-3">
             Pay
           </h4>
-          <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+          <p class="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
             Send, spend and hold money with Careem Pay. Fast, secure, and
             convenient.
           </p>
@@ -420,7 +421,7 @@
       class="w-full sm:w-[95%] md:w-[90%] max-w-7xl mx-auto px-4 sm:px-6 md:px-0 my-12 sm:my-16 md:my-20"
     >
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-10 mb-8 sm:mb-10 pb-8 sm:pb-10 border-b border-gray-200"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 md:gap-10 mb-8 sm:mb-10 pb-8 sm:pb-10 border-b border-gray-200 dark:border-gray-800"
       >
         <div class="flex flex-col gap-4 sm:gap-5">
           <img
@@ -457,49 +458,49 @@
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Ride</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Food</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Careem Plus</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Quick Grocery</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Pay</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Captions</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Business Rides</a
               >
             </li>
@@ -516,28 +517,28 @@
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >About Us</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Life at Careem</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Engineering at Careem</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Join Careem</a
               >
             </li>
@@ -554,21 +555,21 @@
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Customer Safety</a
               >
             </li>
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Captain Safety</a
               >
             </li>
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Information Security</a
               >
             </li>
@@ -585,28 +586,28 @@
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Help Center</a
               >
             </li>
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Contact Us</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Book Your Ride</a
               >
             </li>
             <li>
               <a
                 href="partners.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Become a Partner</a
               >
             </li>
@@ -617,14 +618,14 @@
       <div
         class="flex flex-col sm:flex-row flex-wrap justify-between items-center gap-4 sm:gap-5 text-center sm:text-left"
       >
-        <p class="text-xs sm:text-sm text-gray-500 order-3 sm:order-1">
+        <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-500 order-3 sm:order-1">
           All rights reserved. Careem, an Uber company © 2024
         </p>
         <div
           class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 order-2"
         >
           <p
-            class="text-xs sm:text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+            class="text-xs sm:text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
           >
             Terms of Service
             <span
@@ -632,7 +633,7 @@
             ></span>
           </p>
           <p
-            class="text-xs sm:text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+            class="text-xs sm:text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
           >
             Privacy Policy
             <span

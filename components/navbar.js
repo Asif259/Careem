@@ -1,7 +1,7 @@
 // Navbar component for Careem website
 function loadNavbar(activePage) {
   const navbarContainer = document.getElementById('navbar-container');
-  
+
   if (!navbarContainer) {
     console.error('Navbar container not found');
     return;
@@ -25,7 +25,7 @@ function loadNavbar(activePage) {
   ];
 
   const navbarHTML = `
-    <nav class="w-full bg-white shadow-md sticky top-0 z-50">
+    <nav class="w-full bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 transition-colors duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16 md:h-20">
           <!-- Logo and Mobile Menu Button -->
@@ -33,7 +33,7 @@ function loadNavbar(activePage) {
             <!-- Mobile menu button -->
             <button
               id="mobile-menu-button"
-              class="md:hidden p-2 rounded-md text-gray-700 hover:text-careem-green hover:bg-careem-green/10 focus:outline-none focus:ring-2 focus:ring-careem-green transition-all relative"
+              class="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-careem-green hover:bg-careem-green/10 focus:outline-none focus:ring-2 focus:ring-careem-green transition-all relative"
               aria-label="Toggle menu"
               aria-expanded="false"
             >
@@ -44,7 +44,7 @@ function loadNavbar(activePage) {
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            
+
             <!-- Logo -->
             <a href="index.html" class="flex items-center">
               <img src="img/logo.svg" alt="Careem Logo" class="h-8 md:h-10 w-auto hover:opacity-80 transition-opacity" />
@@ -59,7 +59,7 @@ function loadNavbar(activePage) {
                 class="px-4 py-2 rounded-lg text-sm lg:text-base font-medium transition-all duration-300 ${
                   currentPage === link.page
                     ? 'text-careem-green bg-careem-green/10 font-semibold'
-                    : 'text-gray-700 hover:text-careem-green hover:bg-careem-green/5'
+                    : 'text-gray-700 dark:text-gray-300 hover:text-careem-green hover:bg-careem-green/5'
                 }"
               >
                 ${link.label}
@@ -67,8 +67,20 @@ function loadNavbar(activePage) {
             `).join('')}
           </div>
 
-          <!-- CTA Button -->
-          <div class="hidden md:flex md:items-center">
+          <!-- CTA and Dark Mode Toggle -->
+          <div class="hidden md:flex md:items-center md:gap-3">
+            <button
+              id="dark-mode-toggle"
+              class="p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-careem-green hover:bg-careem-green/10 transition-all duration-300"
+              aria-label="Toggle dark mode"
+            >
+              <svg class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+              <svg class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </button>
             <a
               href="contact.html"
               class="px-6 py-2.5 rounded-full text-sm lg:text-base font-bold text-white bg-gradient-to-r from-careem-green to-careem-green-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
@@ -76,11 +88,25 @@ function loadNavbar(activePage) {
               Get Started
             </a>
           </div>
+
+          <!-- Mobile Dark Mode Toggle -->
+          <button
+            id="dark-mode-toggle-mobile"
+            class="md:hidden p-2 rounded-lg text-gray-700 dark:text-gray-300 hover:text-careem-green hover:bg-careem-green/10 transition-all duration-300"
+            aria-label="Toggle dark mode"
+          >
+            <svg class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </button>
         </div>
       </div>
 
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+      <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
         <div class="px-2 pt-2 pb-3 space-y-1">
           ${navLinks.map(link => `
             <a
@@ -88,7 +114,7 @@ function loadNavbar(activePage) {
               class="block px-4 py-3 rounded-lg text-base font-medium transition-all duration-300 ${
                 currentPage === link.page
                   ? 'text-careem-green bg-careem-green/10 font-semibold'
-                  : 'text-gray-700 hover:text-careem-green hover:bg-careem-green/5'
+                  : 'text-gray-700 dark:text-gray-300 hover:text-careem-green hover:bg-careem-green/5'
               }"
             >
               ${link.label}
@@ -107,6 +133,9 @@ function loadNavbar(activePage) {
 
   navbarContainer.innerHTML = navbarHTML;
 
+  // Initialize dark mode
+  initDarkMode();
+
   // Mobile menu toggle functionality
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -116,7 +145,7 @@ function loadNavbar(activePage) {
   if (mobileMenuButton && mobileMenu) {
     mobileMenuButton.addEventListener('click', () => {
       const isHidden = mobileMenu.classList.contains('hidden');
-      
+
       if (isHidden) {
         mobileMenu.classList.remove('hidden');
         menuIcon.classList.add('hidden');
@@ -141,5 +170,30 @@ function loadNavbar(activePage) {
       });
     });
   }
+
+  // Dark mode toggle functionality
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  const darkModeToggleMobile = document.getElementById('dark-mode-toggle-mobile');
+
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+  }
+
+  if (darkModeToggleMobile) {
+    darkModeToggleMobile.addEventListener('click', toggleDarkMode);
+  }
 }
 
+function initDarkMode() {
+  if (localStorage.getItem('darkMode') === 'true' ||
+      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+}
+
+function toggleDarkMode() {
+  document.documentElement.classList.toggle('dark');
+  localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
+}

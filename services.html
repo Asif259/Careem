@@ -18,6 +18,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
@@ -37,7 +38,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - Careem</title>
   </head>
-  <body class="font-sans bg-white text-gray-800">
+  <body class="font-sans bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 transition-colors duration-300">
     <!-- Navbar Component Container -->
     <div id="navbar-container"></div>
 
@@ -56,15 +57,15 @@
     <section class="w-[90%] max-w-7xl mx-auto my-24">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
-          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
         >
           <div
             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
           >
             <i class="bx bx-car"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Ride</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Ride</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
             Book a ride instantly. Whether you're going to work, running
             errands, or heading out for the night, get there safely and
             comfortably.
@@ -72,75 +73,75 @@
         </div>
 
         <div
-          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
         >
           <div
             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
           >
             <i class="bx bx-restaurant"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Food Delivery</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Food Delivery</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
             Order from 6500+ restaurants. Track your order in real-time and get
             your favorite meals delivered fresh to your door.
           </p>
         </div>
 
         <div
-          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
         >
           <div
             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
           >
             <i class="bx bx-shopping-bag"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Quick Grocery</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Quick Grocery</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
             Dubai's fastest grocery delivery. Get fresh produce, daily
             essentials, and more delivered in minutes, not hours.
           </p>
         </div>
 
         <div
-          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
         >
           <div
             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
           >
             <i class="bx bx-credit-card"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Careem Pay</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Careem Pay</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
             Send, spend, and hold money with Careem Pay. A fast, secure, and
             convenient way to manage your finances.
           </p>
         </div>
 
         <div
-          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
         >
           <div
             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
           >
             <i class="bx bx-crown"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Careem Plus</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Careem Plus</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
             Unlock unlimited free deliveries, exclusive discounts, and premium
             perks. Start your free trial today.
           </p>
         </div>
 
         <div
-          class="bg-white rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100"
+          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
         >
           <div
             class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
           >
             <i class="bx bx-buildings"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-800 mb-4">Business Rides</h3>
-          <p class="text-gray-600 leading-relaxed">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Business Rides</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
             Enterprise solutions for your business. Manage company rides, track
             expenses, and streamline corporate transportation.
           </p>
@@ -152,14 +153,14 @@
     <section class="w-[90%] max-w-7xl mx-auto my-24">
       <div class="text-center mb-16">
         <h2
-          class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-5 relative inline-block"
+          class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block"
         >
           Why Choose Careem
           <span
             class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
           ></span>
         </h2>
-        <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
           Experience the convenience of having everything you need in one place
         </p>
       </div>
@@ -175,10 +176,10 @@
           />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-5">
             6500+ Restaurants & Partners
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             With over 6500 restaurants and business partners, we offer the
             widest selection of options. From local favorites to international
             chains, discover new flavors and enjoy your trusted favorites.
@@ -197,10 +198,10 @@
           />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-5">
             Fast & Reliable Delivery
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             Our advanced logistics network ensures your orders arrive on time,
             every time. Track your delivery in real-time and receive updates at
             every step of the journey.
@@ -219,10 +220,10 @@
           />
         </div>
         <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-5">
+          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-5">
             24/7 Customer Support
           </h3>
-          <p class="text-lg text-gray-600 leading-relaxed">
+          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
             Our dedicated care team is available around the clock to assist you.
             Whether you have questions, need help with an order, or want to
             provide feedback, we're here for you.
@@ -278,7 +279,7 @@
     <!-- ==================== FOOTER ==================== -->
     <footer class="w-[90%] max-w-7xl mx-auto my-20">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200 dark:border-gray-800"
       >
         <div class="flex flex-col gap-5">
           <img src="img/logo.svg" alt="Careem Logo" class="w-36 h-auto mb-5" />
@@ -307,49 +308,49 @@
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Ride</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Food</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Careem Plus</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Quick Grocery</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Pay</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Captions</a
               >
             </li>
             <li>
               <a
                 href="services.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Business Rides</a
               >
             </li>
@@ -362,28 +363,28 @@
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >About Us</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Life at Careem</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Engineering at Careem</a
               >
             </li>
             <li>
               <a
                 href="about.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Join Careem</a
               >
             </li>
@@ -398,21 +399,21 @@
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Customer Safety</a
               >
             </li>
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Captain Safety</a
               >
             </li>
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Information Security</a
               >
             </li>
@@ -425,28 +426,28 @@
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Help Center</a
               >
             </li>
             <li>
               <a
                 href="contact.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Contact Us</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Book Your Ride</a
               >
             </li>
             <li>
               <a
                 href="partners.html"
-                class="text-gray-700 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
+                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
                 >Become a Partner</a
               >
             </li>
@@ -460,7 +461,7 @@
         </p>
         <div class="flex gap-8">
           <p
-            class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+            class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
           >
             Terms of Service
             <span
@@ -468,7 +469,7 @@
             ></span>
           </p>
           <p
-            class="text-sm text-gray-700 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
+            class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
           >
             Privacy Policy
             <span
