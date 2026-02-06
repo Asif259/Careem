@@ -1,622 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/63239a6255.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              "careem-green": "#18aa33",
-              "careem-green-dark": "#0f6b20",
-              "careem-green-light": "#4fd167",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-            },
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/63239a6255.js" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            "careem-green": "#18aa33",
+            "careem-green-dark": "#0f6b20",
+            "careem-green-light": "#4fd167",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
           },
         },
-      };
-    </script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Help & Contact - Careem</title>
-  </head>
-  <body class="font-sans bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 transition-colors duration-300">
-    <!-- Navbar Component Container -->
-    <div id="navbar-container"></div>
+      },
+    };
+  </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help & Contact - Careem</title>
+  <!-- Apply dark mode immediately to prevent flash -->
+  <script>
+    if (localStorage.getItem('darkMode') === 'true' ||
+      (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+</head>
 
-    <!-- ==================== PAGE HEADER ==================== -->
-    <section
-      class="w-[90%] max-w-7xl mx-auto my-16 text-center py-20 px-6 rounded-3xl bg-gradient-to-r from-careem-green to-careem-green-dark text-white shadow-xl"
-    >
-      <h1 class="text-5xl md:text-6xl font-extrabold mb-5">Help & Support</h1>
-      <p class="text-xl md:text-2xl opacity-95 max-w-3xl mx-auto">
-        We're here to help. Get answers to your questions or reach out to our
-        support team.
-      </p>
-    </section>
+<body class="font-sans bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+  <!-- Navbar Component Container -->
+  <div id="navbar-container"></div>
 
-    <!-- ==================== HELP SECTIONS ==================== -->
-    <section class="w-[90%] max-w-7xl mx-auto my-24">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
-        >
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
-          >
-            <i class="bx bx-help-circle"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Help Center</h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-            Browse our comprehensive help articles and find answers to
-            frequently asked questions about rides, food delivery, payments, and
-            more.
-          </p>
-          <a href="#">
-            <button
-              class="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              Browse Help
-            </button>
-          </a>
-        </div>
+  <!-- ==================== PAGE HEADER ==================== -->
+  <section
+    class="w-[90%] max-w-7xl mx-auto my-16 text-center py-20 px-6 rounded-3xl bg-gradient-to-r from-careem-green to-careem-green-dark text-white shadow-xl">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-5">Help & Support</h1>
+    <p class="text-xl md:text-2xl opacity-95 max-w-3xl mx-auto">
+      We're here to help. Get answers to your questions or reach out to our
+      support team.
+    </p>
+  </section>
 
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
-        >
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
-          >
-            <i class="bx bx-shield"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            Safety & Security
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-            Learn about our safety measures, security features, and how we
-            protect both customers and captains on our platform.
-          </p>
-          <a href="#">
-            <button
-              class="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              Learn More
-            </button>
-          </a>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800"
-        >
-          <div
-            class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl"
-          >
-            <i class="bx bx-headphone"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">24/7 Support</h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
-            Our support team is available 24/7 to assist you with any issues,
-            questions, or concerns. We're just a message away.
-          </p>
-          <a href="#contact-form">
-            <button
-              class="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              Contact Us
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== CONTACT FORM ==================== -->
-    <section class="w-[90%] max-w-4xl mx-auto my-24" id="contact-form">
-      <div class="text-center mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block"
-        >
-          Get in Touch
-          <span
-            class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
-          ></span>
-        </h2>
-        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Fill out the form below and we'll get back to you as soon as possible
-        </p>
-      </div>
-
-      <form class="bg-white dark:bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl">
-        <div class="mb-8">
-          <label
-            for="name"
-            class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base"
-            >Full Name</label
-          >
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your full name"
-            required
-            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white focus:outline-none transition-all duration-300"
-          />
-        </div>
-
-        <div class="mb-8">
-          <label
-            for="email"
-            class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base"
-            >Email Address</label
-          >
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white focus:outline-none transition-all duration-300"
-          />
-        </div>
-
-        <div class="mb-8">
-          <label
-            for="phone"
-            class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base"
-            >Phone Number</label
-          >
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Enter your phone number"
-            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white focus:outline-none transition-all duration-300"
-          />
-        </div>
-
-        <div class="mb-8">
-          <label
-            for="subject"
-            class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base"
-            >Subject</label
-          >
-          <select
-            id="subject"
-            name="subject"
-            required
-            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white focus:outline-none transition-all duration-300"
-          >
-            <option value="">Select a subject</option>
-            <option value="general">General Inquiry</option>
-            <option value="support">Customer Support</option>
-            <option value="partner">Partner Inquiry</option>
-            <option value="safety">Safety Concern</option>
-            <option value="feedback">Feedback</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-
-        <div class="mb-8">
-          <label
-            for="message"
-            class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base"
-            >Message</label
-          >
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Tell us how we can help you..."
-            required
-            rows="6"
-            class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white focus:outline-none transition-all duration-300 resize-y"
-          ></textarea>
-        </div>
-
-        <div>
-          <button
-            type="submit"
-            class="w-full px-8 py-5 rounded-xl font-bold text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-          >
-            Send Message
-          </button>
-        </div>
-      </form>
-    </section>
-
-    <!-- ==================== FAQ SECTION ==================== -->
-    <section class="w-[90%] max-w-7xl mx-auto my-24">
-      <div class="text-center mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block"
-        >
-          Frequently Asked Questions
-          <span
-            class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
-          ></span>
-        </h2>
-        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Quick answers to common questions
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            How do I book a ride?
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-            Simply open the Careem app, enter your destination, select your ride
-            type, and confirm your booking. A captain will be assigned to pick
-            you up.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            How do I track my food order?
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-            Once you place an order, you'll receive real-time updates on your
-            order status. You can track it from restaurant preparation to
-            delivery at your door.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            What payment methods are accepted?
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-            We accept cash, credit/debit cards, and Careem Pay. You can also
-            save multiple payment methods for faster checkout.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            How do I become a partner?
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-            Visit our Partners page to learn more about partnering with Careem.
-            You can apply online and our team will get in touch with you.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            Is my information secure?
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-            Yes, we use enterprise-grade security measures to protect your
-            personal and payment information. Your privacy is our priority.
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300"
-        >
-          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
-            What is Careem Plus?
-          </h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
-            Careem Plus is our subscription service that offers unlimited free
-            deliveries, exclusive discounts, and premium perks across all Careem
-            services.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== SAFETY INFORMATION ==================== -->
-    <section class="w-[90%] max-w-7xl mx-auto my-24">
-      <div class="text-center mb-16">
-        <h2
-          class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block"
-        >
-          Safety & Security
-          <span
-            class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"
-          ></span>
-        </h2>
-        <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-          Your safety is our top priority
-        </p>
-      </div>
-
-      <div class="flex flex-col lg:flex-row items-center gap-12">
-        <div
-          class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300"
-        >
-          <img
-            src="img/service5.webp"
-            alt="Safety"
-            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-          />
-        </div>
-        <div class="flex-1 min-w-[300px] px-5">
-          <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-5">
-            Comprehensive Safety Measures
-          </h3>
-          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
-            We implement rigorous safety measures across all our services. All
-            captains undergo background checks and vehicle inspections. We use
-            real-time tracking and have a 24/7 safety response team ready to
-            assist.
-          </p>
-          <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
-            For food deliveries, we ensure proper hygiene standards and
-            contactless delivery options. Your safety and well-being are our
-            highest priorities.
-          </p>
-          <a href="#">
-            <button
-              class="px-12 py-4 rounded-full font-bold text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              Learn More About Safety
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="w-[90%] max-w-7xl mx-auto my-20">
+  <!-- ==================== HELP SECTIONS ==================== -->
+  <section class="w-[90%] max-w-7xl mx-auto my-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200 dark:border-gray-800"
-      >
-        <div class="flex flex-col gap-5">
-          <img src="img/logo.svg" alt="Careem Logo" class="w-36 h-auto mb-5" />
-          <div class="flex flex-col gap-3">
-            <img
-              src="img/app-store.webp"
-              alt="App Store"
-              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
-            />
-            <img
-              src="img/google-play.webp"
-              alt="Google Play"
-              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
-            />
-            <img
-              src="img/apk-download.webp"
-              alt="APK Download"
-              class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer"
-            />
-          </div>
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800">
+        <div
+          class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+          <i class="bx bx-help-circle"></i>
         </div>
-
-        <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">Products</h6>
-          <ul class="space-y-3">
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Ride</a
-              >
-            </li>
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Food</a
-              >
-            </li>
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Careem Plus</a
-              >
-            </li>
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Quick Grocery</a
-              >
-            </li>
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Pay</a
-              >
-            </li>
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Captions</a
-              >
-            </li>
-            <li>
-              <a
-                href="services.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Business Rides</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">Company</h6>
-          <ul class="space-y-3">
-            <li>
-              <a
-                href="about.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Life at Careem</a
-              >
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Engineering at Careem</a
-              >
-            </li>
-            <li>
-              <a
-                href="about.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Join Careem</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">
-            Safety and Security
-          </h6>
-          <ul class="space-y-3">
-            <li>
-              <a
-                href="contact.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Customer Safety</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Captain Safety</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Information Security</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h6 class="text-lg font-bold text-careem-green mb-5">Support</h6>
-          <ul class="space-y-3">
-            <li>
-              <a
-                href="contact.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Help Center</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Book Your Ride</a
-              >
-            </li>
-            <li>
-              <a
-                href="partners.html"
-                class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block"
-                >Become a Partner</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="flex flex-col md:flex-row justify-between items-center gap-5">
-        <p class="text-sm text-gray-500">
-          All rights reserved. Careem, an Uber company © 2024
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Help Center</h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+          Browse our comprehensive help articles and find answers to
+          frequently asked questions about rides, food delivery, payments, and
+          more.
         </p>
-        <div class="flex gap-8">
-          <p
-            class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
-          >
-            Terms of Service
-            <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"
-            ></span>
-          </p>
-          <p
-            class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group"
-          >
-            Privacy Policy
-            <span
-              class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"
-            ></span>
-          </p>
+        <a href="#">
+          <button
+            class="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            Browse Help
+          </button>
+        </a>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800">
+        <div
+          class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+          <i class="bx bx-shield"></i>
         </div>
-        <div class="flex gap-4">
-          <i
-            class="bx bxl-facebook-circle text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-          ></i>
-          <i
-            class="bx bxl-twitter text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-          ></i>
-          <i
-            class="bx bxl-linkedin text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-          ></i>
-          <i
-            class="bx bxl-instagram text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-          ></i>
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          Safety & Security
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+          Learn about our safety measures, security features, and how we
+          protect both customers and captains on our platform.
+        </p>
+        <a href="#">
+          <button
+            class="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            Learn More
+          </button>
+        </a>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border border-gray-100 dark:border-gray-800">
+        <div
+          class="w-16 h-16 rounded-2xl bg-gradient-to-br from-careem-green/10 to-careem-green-dark/10 flex items-center justify-center mb-6 text-careem-green text-3xl">
+          <i class="bx bx-headphone"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">24/7 Support</h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+          Our support team is available 24/7 to assist you with any issues,
+          questions, or concerns. We're just a message away.
+        </p>
+        <a href="#contact-form">
+          <button
+            class="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+            Contact Us
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT FORM ==================== -->
+  <section class="w-[90%] max-w-4xl mx-auto my-24" id="contact-form">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block">
+        Get in Touch
+        <span
+          class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        Fill out the form below and we'll get back to you as soon as possible
+      </p>
+    </div>
+
+    <form class="bg-white dark:bg-gray-900 rounded-3xl p-8 md:p-12 shadow-xl">
+      <div class="mb-8">
+        <label for="name" class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white dark:focus:bg-gray-700 focus:outline-none transition-all duration-300" />
+      </div>
+
+      <div class="mb-8">
+        <label for="email" class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base">Email
+          Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white dark:focus:bg-gray-700 focus:outline-none transition-all duration-300" />
+      </div>
+
+      <div class="mb-8">
+        <label for="phone" class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base">Phone
+          Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white dark:focus:bg-gray-700 focus:outline-none transition-all duration-300" />
+      </div>
+
+      <div class="mb-8">
+        <label for="subject" class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base">Subject</label>
+        <select id="subject" name="subject" required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white dark:focus:bg-gray-700 focus:outline-none transition-all duration-300">
+          <option value="">Select a subject</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Customer Support</option>
+          <option value="partner">Partner Inquiry</option>
+          <option value="safety">Safety Concern</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="mb-8">
+        <label for="message" class="block font-semibold text-gray-800 dark:text-gray-100 mb-3 text-base">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us how we can help you..." required rows="6"
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 text-base font-sans focus:border-careem-green focus:bg-white dark:focus:bg-gray-700 focus:outline-none transition-all duration-300 resize-y"></textarea>
+      </div>
+
+      <div>
+        <button type="submit"
+          class="w-full px-8 py-5 rounded-xl font-bold text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <!-- ==================== FAQ SECTION ==================== -->
+  <section class="w-[90%] max-w-7xl mx-auto my-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block">
+        Frequently Asked Questions
+        <span
+          class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        Quick answers to common questions
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          How do I book a ride?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Simply open the Careem app, enter your destination, select your ride
+          type, and confirm your booking. A captain will be assigned to pick
+          you up.
+        </p>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          How do I track my food order?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Once you place an order, you'll receive real-time updates on your
+          order status. You can track it from restaurant preparation to
+          delivery at your door.
+        </p>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          What payment methods are accepted?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          We accept cash, credit/debit cards, and Careem Pay. You can also
+          save multiple payment methods for faster checkout.
+        </p>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          How do I become a partner?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Visit our Partners page to learn more about partnering with Careem.
+          You can apply online and our team will get in touch with you.
+        </p>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          Is my information secure?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Yes, we use enterprise-grade security measures to protect your
+          personal and payment information. Your privacy is our priority.
+        </p>
+      </div>
+
+      <div
+        class="bg-white dark:bg-gray-900 rounded-2xl p-10 shadow-md hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">
+          What is Careem Plus?
+        </h3>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+          Careem Plus is our subscription service that offers unlimited free
+          deliveries, exclusive discounts, and premium perks across all Careem
+          services.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SAFETY INFORMATION ==================== -->
+  <section class="w-[90%] max-w-7xl mx-auto my-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 dark:text-gray-100 mb-5 relative inline-block">
+        Safety & Security
+        <span
+          class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-careem-green to-careem-green-dark rounded"></span>
+      </h2>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        Your safety is our top priority
+      </p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row items-center gap-12">
+      <div
+        class="flex-1 min-w-[300px] rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <img src="img/service5.webp" alt="Safety"
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+      </div>
+      <div class="flex-1 min-w-[300px] px-5">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-gray-100 mb-5">
+          Comprehensive Safety Measures
+        </h3>
+        <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-5">
+          We implement rigorous safety measures across all our services. All
+          captains undergo background checks and vehicle inspections. We use
+          real-time tracking and have a 24/7 safety response team ready to
+          assist.
+        </p>
+        <p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
+          For food deliveries, we ensure proper hygiene standards and
+          contactless delivery options. Your safety and well-being are our
+          highest priorities.
+        </p>
+        <a href="#">
+          <button
+            class="px-12 py-4 rounded-full font-bold text-lg text-white bg-gradient-to-r from-careem-green to-careem-green-dark shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            Learn More About Safety
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="w-[90%] max-w-7xl mx-auto my-20">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-10 pb-10 border-b border-gray-200 dark:border-gray-800">
+      <div class="flex flex-col gap-5">
+        <img src="img/logo.svg" alt="Careem Logo" class="w-36 h-auto mb-5" />
+        <div class="flex flex-col gap-3">
+          <img src="img/app-store.webp" alt="App Store"
+            class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer" />
+          <img src="img/google-play.webp" alt="Google Play"
+            class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer" />
+          <img src="img/apk-download.webp" alt="APK Download"
+            class="w-32 h-auto rounded-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer" />
         </div>
       </div>
-    </footer>
 
-    <!-- Navbar Component -->
-    <script src="components/navbar.js"></script>
-    <script>
-      // Load navbar with active page
-      loadNavbar("contact.html");
+      <div>
+        <h6 class="text-lg font-bold text-careem-green mb-5">Products</h6>
+        <ul class="space-y-3">
+          <li>
+            <a href="services.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Ride</a>
+          </li>
+          <li>
+            <a href="services.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Food</a>
+          </li>
+          <li>
+            <a href="services.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Careem
+              Plus</a>
+          </li>
+          <li>
+            <a href="services.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Quick
+              Grocery</a>
+          </li>
+          <li>
+            <a href="services.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Pay</a>
+          </li>
+          <li>
+            <a href="services.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captions</a>
+          </li>
+          <li>
+            <a href="services.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Business
+              Rides</a>
+          </li>
+        </ul>
+      </div>
 
-      // Form submission
-      const form = document.querySelector("form");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert("Thank you for contacting us! We will get back to you soon.");
-        form.reset();
-      });
-    </script>
-  </body>
+      <div>
+        <h6 class="text-lg font-bold text-careem-green mb-5">Company</h6>
+        <ul class="space-y-3">
+          <li>
+            <a href="about.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">About
+              Us</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Life
+              at Careem</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Engineering
+              at Careem</a>
+          </li>
+          <li>
+            <a href="about.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Join
+              Careem</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-bold text-careem-green mb-5">
+          Safety and Security
+        </h6>
+        <ul class="space-y-3">
+          <li>
+            <a href="contact.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Customer
+              Safety</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Captain
+              Safety</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Information
+              Security</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-bold text-careem-green mb-5">Support</h6>
+        <ul class="space-y-3">
+          <li>
+            <a href="contact.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Help
+              Center</a>
+          </li>
+          <li>
+            <a href="contact.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Contact
+              Us</a>
+          </li>
+          <li>
+            <a href="#"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Book
+              Your Ride</a>
+          </li>
+          <li>
+            <a href="partners.html"
+              class="text-gray-700 dark:text-gray-400 font-medium hover:text-careem-green hover:translate-x-1 transition-all duration-300 inline-block">Become
+              a Partner</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-5">
+      <p class="text-sm text-gray-500">
+        All rights reserved. Careem, an Uber company © 2024
+      </p>
+      <div class="flex gap-8">
+        <p
+          class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
+          Terms of Service
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"></span>
+        </p>
+        <p
+          class="text-sm text-gray-700 dark:text-gray-400 cursor-pointer hover:text-careem-green transition-colors duration-300 relative group">
+          Privacy Policy
+          <span
+            class="absolute bottom-0 left-0 w-0 h-0.5 bg-careem-green transition-all duration-300 group-hover:w-full"></span>
+        </p>
+      </div>
+      <div class="flex gap-4">
+        <i
+          class="bx bxl-facebook-circle text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
+        <i
+          class="bx bxl-twitter text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
+        <i
+          class="bx bxl-linkedin text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
+        <i
+          class="bx bxl-instagram text-careem-green text-2xl p-2 rounded-full bg-careem-green/10 hover:bg-careem-green hover:text-white hover:-translate-y-1 transition-all duration-300 cursor-pointer"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Navbar Component -->
+  <script src="components/navbar.js"></script>
+  <script>
+    // Load navbar with active page
+    loadNavbar("contact.html");
+
+    // Form submission
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Thank you for contacting us! We will get back to you soon.");
+      form.reset();
+    });
+  </script>
+</body>
+
 </html>
